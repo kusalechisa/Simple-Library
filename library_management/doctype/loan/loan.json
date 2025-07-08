@@ -1,0 +1,18 @@
+{
+  "doctype": "DocType",
+  "name": "Loan",
+  "module": "Library Management",
+  "fields": [
+    {"fieldname": "book", "fieldtype": "Link", "label": "Book", "options": "Book", "reqd": 1},
+    {"fieldname": "member", "fieldtype": "Link", "label": "Member", "options": "Member", "reqd": 1},
+    {"fieldname": "loan_date", "fieldtype": "Date", "label": "Loan Date", "reqd": 1},
+    {"fieldname": "return_date", "fieldtype": "Date", "label": "Return Date"},
+    {"fieldname": "returned", "fieldtype": "Check", "label": "Returned", "default": 0},
+    {"fieldname": "overdue", "fieldtype": "Check", "label": "Overdue", "default": 0}
+  ],
+  "permissions": [
+    {"role": "Librarian", "read": 1, "write": 1, "create": 1, "delete": 1},
+    {"role": "Admin", "read": 1, "write": 1, "create": 1, "delete": 1},
+    {"role": "Member", "read": 1}
+  ]
+} 

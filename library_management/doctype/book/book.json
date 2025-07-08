@@ -1,0 +1,17 @@
+{
+  "doctype": "DocType",
+  "name": "Book",
+  "module": "Library Management",
+  "fields": [
+    {"fieldname": "title", "fieldtype": "Data", "label": "Title", "reqd": 1},
+    {"fieldname": "author", "fieldtype": "Data", "label": "Author", "reqd": 1},
+    {"fieldname": "publish_date", "fieldtype": "Date", "label": "Publish Date"},
+    {"fieldname": "isbn", "fieldtype": "Data", "label": "ISBN", "reqd": 1},
+    {"fieldname": "status", "fieldtype": "Select", "label": "Status", "options": "Available\nOn Loan\nReserved", "default": "Available"}
+  ],
+  "permissions": [
+    {"role": "Librarian", "read": 1, "write": 1, "create": 1, "delete": 1},
+    {"role": "Admin", "read": 1, "write": 1, "create": 1, "delete": 1},
+    {"role": "Member", "read": 1}
+  ]
+} 

@@ -1,0 +1,16 @@
+{
+  "doctype": "DocType",
+  "name": "Reservation",
+  "module": "Library Management",
+  "fields": [
+    {"fieldname": "book", "fieldtype": "Link", "label": "Book", "options": "Book", "reqd": 1},
+    {"fieldname": "member", "fieldtype": "Link", "label": "Member", "options": "Member", "reqd": 1},
+    {"fieldname": "reservation_date", "fieldtype": "Date", "label": "Reservation Date", "reqd": 1},
+    {"fieldname": "fulfilled", "fieldtype": "Check", "label": "Fulfilled", "default": 0}
+  ],
+  "permissions": [
+    {"role": "Librarian", "read": 1, "write": 1, "create": 1, "delete": 1},
+    {"role": "Admin", "read": 1, "write": 1, "create": 1, "delete": 1},
+    {"role": "Member", "read": 1, "create": 1}
+  ]
+} 
