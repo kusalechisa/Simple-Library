@@ -50,3 +50,24 @@ A web application for managing books, members, and loans in a library. Built wit
 ## Notes
 - All CRUD and business logic are handled via REST API, not Frappe Desk.
 - See code comments and this README for architectural decisions and trade-offs. 
+
+---
+
+## **How to Fix**
+
+1. **Install Frappe Bench CLI:**
+   Open a terminal and run:
+   ```sh
+   pip install frappe-bench
+   ```
+
+2. **Restart your terminal** (or ensure your Python/Scripts directory is in your PATH).
+
+3. **Then, re-run:**
+   ```sh
+   bench init my-bench --frappe-branch version-15
+   ```
+
+---
+
+Would you like me to run the `pip install frappe-bench` command for you now? If so, please confirm that you have Python and pip installed on your system. 
